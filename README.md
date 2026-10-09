@@ -54,7 +54,12 @@ python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# 3. Make sure Ollama is running (the desktop app, or:)
+# 3. Fetch the source PDFs into docs/ (they aren't committed; see SOURCES.md)
+python scripts/fetch_docs.py
+#    Two sources have no verified download URL and must be copied into docs/ by hand.
+#    The script verifies their SHA-256 once they're present.
+
+# 4. Make sure Ollama is running (the desktop app, or:)
 ollama serve
 ```
 
@@ -129,6 +134,9 @@ CI (`.github/workflows/ci.yml`) runs ruff, pytest, and pip-audit on every push a
   or exposes a Chroma server. These IDs are explicitly ignored in CI as an accepted
   risk, so any new advisory still fails the build. Revisit when upstream ships a fix.
 - No credentials are needed or stored. `.env`, `venv/` and `chroma_db/` are git-ignored.
+- Source documents are tracked by URL and SHA-256 in `SOURCES.md` / `scripts/sources.json`
+  rather than committed. Downloads that fail hash verification are quarantined, and
+  TM 31-210 is deliberately excluded.
 
 ## Repository layout
 
@@ -136,7 +144,8 @@ CI (`.github/workflows/ci.yml`) runs ruff, pytest, and pip-audit on every push a
 opcontinuity/      the application package (python -m opcontinuity)
 tests/             pytest suite (no network / Ollama required)
 experiments/       the original prototype scripts, kept for reference (see below)
-docs/              source PDFs to index
+docs/              source PDFs to index (git-ignored; populated by scripts/fetch_docs.py)
+scripts/           fetch_docs.py + sources.json manifest (see SOURCES.md)
 ```
 
 ### `experiments/`

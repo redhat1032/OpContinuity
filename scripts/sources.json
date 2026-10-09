@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "excluded": [
+    {
+      "filename": "USA_TM-31-210-improvised-munitions-handbook.pdf",
+      "reason": "Deliberately excluded: improvised explosives/weapons manufacturing content, outside the project's writer-realism scope."
+    }
+  ],
+  "documents": [
+    {
+      "filename": "ERIC_ED106512.pdf",
+      "title": "Signalman 1 & C: Rate Training Manual (NAVEDTRA 10136-C), 1974",
+      "publisher": "U.S. Naval Education and Training Command (via ERIC, U.S. Dept. of Education)",
+      "url": "https://files.eric.ed.gov/fulltext/ED106512.pdf",
+      "sha256": "da8b19451c4a2901270513fb2661b5ebfb1f11562fa30da4217ea75af0f31894",
+      "size": 5322909,
+      "retrieved": "2025-06-23",
+      "verified": "2026-10-09",
+      "license": "U.S. Government work, public domain in the U.S. (17 U.S.C. 105)",
+      "purpose": "Naval visual and radio signalling, flags and communications procedures."
+    },
+    {
+      "filename": "FM3-25x26.pdf",
+      "title": "FM 3-25.26 Map Reading and Land Navigation (20 July 2001)",
+      "publisher": "Headquarters, Department of the Army",
+      "url": "https://archive.org/download/FM3-25x26/FM3-25x26.pdf",
+      "sha256": "bf92a942048931c59f2b48b366acd9b5f8f40120b0866d702dec799a4e8be24c",
+      "size": 8167056,
+      "retrieved": "2025-06-23",
+      "verified": "2026-10-09",
+      "license": "U.S. Government work, public domain; 'Approved for public release: distribution is unlimited.' Superseded by TC 3-25.26.",
+      "purpose": "Map reading, compass use and land navigation."
+    },
+    {
+      "filename": "FM4-25x11.pdf",
+      "title": "FM 4-25.11 First Aid (December 2002, with Change 1)",
+      "publisher": "Headquarters, Departments of the Army, Navy and Air Force, and Commandant, Marine Corps",
+      "url": "https://archive.org/download/FM4-25x11/FM4-25x11.pdf",
+      "sha256": "62010e9dcc9204badd5940154d8b580260776405dba7bd5d99544722fdeb4ce3",
+      "size": 2600639,
+      "retrieved": "2025-06-23",
+      "verified": "2026-10-09",
+      "license": "U.S. Government work, public domain; 'Approved for public release; distribution is unlimited.'",
+      "purpose": "Field first aid and casualty care."
+    },
+    {
+      "filename": "US-Air-Force-AFMAN36-2227V1-Combat-Arms-Training-Programs-Individual-Use-Weapons-May-2004.pdf",
+      "title": "AFMAN 36-2227 Volume 1, Combat Arms Training Programs: Individual Use Weapons (21 May 2004)",
+      "publisher": "Secretary of the Air Force",
+      "url": null,
+      "sha256": "4587d329d4e950a90e9cd5aab231746fcf91ffebfdbaf35385c6b2d988e6a0e7",
+      "size": 6099378,
+      "retrieved": "2025-06-23",
+      "verified": null,
+      "license": "U.S. Government work, public domain; no releasability statement found in the front matter (Distribution: F).",
+      "purpose": "Weapons training and qualification procedures for realistic depiction of range and training scenes.",
+      "note": "UNVERIFIED SOURCE: no official (e-publishing.af.mil) copy of this superseded 2004 edition was located. The original download came from a non-official third-party site (reveresriders.org), which still serves a byte-identical file but is not listed as a source. Place the file in docs/ manually; the script checks its hash."
+    },
+    {
+      "filename": "survival_manual.pdf",
+      "title": "FM 21-76 US Army Survival Manual (abridged third-party reprint)",
+      "publisher": "Derived from Headquarters, Department of the Army FM 21-76 (1992)",
+      "url": null,
+      "sha256": "d35bfb9875c7aeaf2109da9948d24c3ca2cc54e5cbf7c341413ed60ecbc5792d",
+      "size": 3104544,
+      "retrieved": "2025-06-23",
+      "verified": null,
+      "license": "Underlying FM 21-76 text is a U.S. Government work (public domain); this abridged reprint was produced by an unknown third party and its provenance is unknown.",
+      "purpose": "Core survival topics: shelter, water, fire, food, navigation.",
+      "note": "UNVERIFIED SOURCE: no official or archive.org copy with a matching hash was found. Recommended: replace with an official edition (e.g. FM 21-76 from archive.org, or the current ATP 3-50.21) and update this entry. Place the file in docs/ manually; the script checks its hash."
+    }
+  ]
+}
