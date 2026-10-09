@@ -11,3 +11,10 @@ __pycache__/
 # Ignore environment files
 .env
 venv/
+
+# Windows "Mark of the Web" alternate-data-stream files (created when copying downloads via WSL)
+*:Zone.Identifier
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
