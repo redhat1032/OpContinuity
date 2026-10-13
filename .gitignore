@@ -11,3 +11,15 @@ __pycache__/
 # Ignore environment files
 .env
 venv/
+
+# Windows "Mark of the Web" alternate-data-stream files (created when copying downloads via WSL)
+*:Zone.Identifier
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+
+# Source PDFs are not committed; fetch them with scripts/fetch_docs.py (see SOURCES.md)
+docs/*.pdf
+docs/*.pdf.mismatch
+docs/.part-*
